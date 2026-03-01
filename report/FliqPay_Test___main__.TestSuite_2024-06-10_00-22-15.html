@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Fliq_Pay_Test</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <h2 class="text-capitalize">Fliq_Pay_Test</h2>
+                <p class='attribute'><strong>Start Time: </strong>2024-06-10 00:22:15</p>
+                <p class='attribute'><strong>Duration: </strong>24.98 s</p>
+                <p class='attribute'><strong>Summary: </strong>Total: 2, Pass: 1, Error: 1</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-10 col-md-10">
+                <table class='table table-hover table-responsive'>
+                    <thead>
+                        <tr>
+                            <th>__main__.TestSuite</th>
+                            <th>Status</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class='success'>
+                            <td class="col-xs-10">test_user_dashboard</td>
+                            <td class="col-xs-1">
+                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p>Starting test_user_dashboard...
+I have refreshed the page
+</p>
+                            </td>
+                        </tr>
+                        <tr class='warning'>
+                            <td class="col-xs-10">test_user_login</td>
+                            <td class="col-xs-1">
+                                <span class="label label-warning" style="display:block;width:40px;">Error</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p style="color:maroon;">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=125.0.6422.142)
+Stacktrace:
+	GetHandleVerifier [0x011BB8E3+45827]
+	(No symbol) [0x0114DCC4]
+	(No symbol) [0x0104150F]
+	(No symbol) [0x0101E133]
+	(No symbol) [0x010A949F]
+	(No symbol) [0x010BB8E6]
+	(No symbol) [0x010A2B96]
+	(No symbol) [0x01076998]
+	(No symbol) [0x0107751D]
+	GetHandleVerifier [0x01474513+2899763]
+	GetHandleVerifier [0x014C793D+3240797]
+	GetHandleVerifier [0x012413B4+593364]
+	GetHandleVerifier [0x012482DC+621820]
+	(No symbol) [0x011570A4]
+	(No symbol) [0x011537A8]
+	(No symbol) [0x01153947]
+	(No symbol) [0x011459FE]
+	BaseThreadInitThunk [0x7530FCC9+25]
+	RtlGetAppContainerNamedObjectPath [0x77307CBE+286]
+	RtlGetAppContainerNamedObjectPath [0x77307C8E+238]
+</p><p style="color:maroon;">Traceback (most recent call last):
+  File "C:\Users\Aoyegbemi\FliqpayWeb\test.py", line 28, in test_user_login
+    self.base.user_login("https://sandbox.fincra.com/", "email", "password")
+  File "C:\Users\Aoyegbemi\FliqpayWeb\login_page.py", line 53, in user_login
+    overview_button = self.wait_for_element(By.XPATH, "/html/body/div[1]/div/div/nav/div/ul[2]/li[1]/a")
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Aoyegbemi\FliqpayWeb\login_page.py", line 22, in wait_for_element
+    return WebDriverWait(self.driver, timeout).until(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Aoyegbemi\FliqpayWeb\env\Lib\site-packages\selenium\webdriver\support\wait.py", line 78, in until
+    value = method(self._driver)
+            ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Aoyegbemi\FliqpayWeb\env\Lib\site-packages\selenium\webdriver\support\expected_conditions.py", line 326, in _predicate
+    target = driver.find_element(*target)  # grab element at locator
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Aoyegbemi\FliqpayWeb\env\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 1238, in find_element
+    return self.execute(Command.FIND_ELEMENT, {
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Aoyegbemi\FliqpayWeb\env\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 418, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\Aoyegbemi\FliqpayWeb\env\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 243, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=125.0.6422.142)
+Stacktrace:
+	GetHandleVerifier [0x011BB8E3+45827]
+	(No symbol) [0x0114DCC4]
+	(No symbol) [0x0104150F]
+	(No symbol) [0x0101E133]
+	(No symbol) [0x010A949F]
+	(No symbol) [0x010BB8E6]
+	(No symbol) [0x010A2B96]
+	(No symbol) [0x01076998]
+	(No symbol) [0x0107751D]
+	GetHandleVerifier [0x01474513+2899763]
+	GetHandleVerifier [0x014C793D+3240797]
+	GetHandleVerifier [0x012413B4+593364]
+	GetHandleVerifier [0x012482DC+621820]
+	(No symbol) [0x011570A4]
+	(No symbol) [0x011537A8]
+	(No symbol) [0x01153947]
+	(No symbol) [0x011459FE]
+	BaseThreadInitThunk [0x7530FCC9+25]
+	RtlGetAppContainerNamedObjectPath [0x77307CBE+286]
+	RtlGetAppContainerNamedObjectPath [0x77307C8E+238]
+
+</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">
+                                Total: 2, Pass: 1, Error: 1 -- Duration: 24.98 s
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('td').on('click', '.btn', function(e){
+                e.preventDefault();
+                e.stopImmediatePropagation();
+                var $this = $(this);
+                var $nextRow = $this.closest('tr').next('tr');
+                $nextRow.slideToggle("fast");
+                $this.text(function(i, text){
+                    if (text === 'View') {
+                        return 'Hide';
+                    } else {
+                        return 'View';
+                    };
+                });
+            });
+        });
+    </script>
+</body>
+</html
